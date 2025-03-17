@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { products } from "@/app/components/products/products";
 import ProductCard from "@/app/components/ProductCard";
 
