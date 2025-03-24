@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <div className="relative flex justify-center items-center flex-col w-full md:w-[90%] h-auto text-black mb-24">
       <div className="heading flex justify-center items-center flex-col uppercase w-full h-[100vh]">
-        <h1 className="anton-regular max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl">
+        <h1 className="anton max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl">
           Eco-Friendly, Reusable & Sustainable
         </h1>
-        <h1 className="anton-regular max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl my-5 md:my-10">
+        <h1 className="anton max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl my-5 md:my-10">
           Non woven{" "}
           <span className="bg-light-green border-2 border-l-6 border-b-6 border-black rounded-full py-0 px-5 md:px-10 lg:px-32">
             carry bags
