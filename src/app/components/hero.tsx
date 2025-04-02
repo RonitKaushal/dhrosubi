@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 
 export default function Hero() {
@@ -19,10 +20,10 @@ export default function Hero() {
           alternative. Join us in making a greener choice for a better tomorrow!
         </p>
         <div className="flex justify-center items-center uppercase w-full h-auto">
-          <button className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-white text-black">
+          <button onClick={() => window.location.href = "/products"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-white text-black">
             Show Products
           </button>
-          <button className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
+          <button onClick={() => window.location.href = "tel:+919173144109"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
             Call now!
           </button>
         </div>

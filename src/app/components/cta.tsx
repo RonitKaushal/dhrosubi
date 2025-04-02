@@ -1,3 +1,4 @@
+"use client"
 export default function Cta() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function Cta() {
             </p>
           </div>
           <div className="flex justify-center md:items-end items-center w-full md:w-auto h-auto">
-          <button className="relative uppercase inter font-bold text-base md:text-lg lg:text-xl md:w-52 md:h-16 w-36 h-10 rounded-lg border-2 border-b-4 border-l-4 border-black bg-cream text-black my-5 md:my-0">
+          <button onClick={() => window.location.href = "tel:+919173144109"} className="relative uppercase inter font-bold text-base md:text-lg lg:text-xl md:w-52 md:h-16 w-36 h-10 rounded-lg border-2 border-b-4 border-l-4 border-black bg-cream text-black my-5 md:my-0">
             Call now
           </button>
           </div>

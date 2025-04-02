@@ -10,10 +10,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white border-b-2 border-black z-50">
-      <div className="flex justify-between items-center max-w-[1200px] mx-auto px-4 py-2">
-        
+      <div className="flex justify-between items-center max-w-[1200px] mx-auto py-2">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-start justify-start">
           <Image src="/Dhrosubi Logo.png" width={150} height={50} alt="Logo" />
         </Link>
 
@@ -27,7 +26,7 @@ const Navbar = () => {
 
         {/* Call Now Button */}
         <div className="hidden md:block">
-          <button className="uppercase font-bold text-lg w-40 h-10 rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
+          <button onClick={() => window.location.href = "tel:+919173144109"} className="uppercase font-bold text-lg w-40 h-10 rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
             Call Now
           </button>
         </div>

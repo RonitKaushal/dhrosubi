@@ -9,9 +9,7 @@ export default function Products() {
             <h4 className="inter text-xl md:text-2xl lg:text-2xl">Browse our wide range of products</h4>
         </div>
         <div className="flex justify-between items-center flex-wrap w-full h-auto">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+          <ProductCard />
         </div>
     </div>
   );
