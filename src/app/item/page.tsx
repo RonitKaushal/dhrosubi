@@ -53,7 +53,6 @@ export default function ProductPage() {
   const [selectedImage, setSelectedImage] = useState<string>(
     productData.colors.white.images[0]
   );
-  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
   return (
     <div className="flex justify-center items-center flex-col w-full h-auto max-w-[1200px] mt-28">
@@ -113,7 +112,6 @@ export default function ProductPage() {
                 <button
                   key={size}
                   className="px-4 py-2 rounded-sm border text-sm outline-none"
-                  onClick={() => setSelectedSize(size)}
                 >
                   {size}
                 </button>
@@ -128,9 +126,7 @@ export default function ProductPage() {
                 <button
                   key={gsm}
                   className="px-4 py-2 rounded-sm border text-sm outline-none"
-                  
-                  onClick={() => setSelectedSize(gsm)}
-                >
+                                  >
                   {gsm}
                 </button>
               ))}

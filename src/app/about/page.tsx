@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Users } from "lucide-react";
 import Footer from "../components/footer";
 import Accordion from "../components/accordion";
 import MarqueeDemo from "../components/marquees";
@@ -24,7 +22,7 @@ export default function Home() {
             Our story
           </h4>
           <p className=" mt-5 inter text-xl md:text-2xl lg:text-3xl font-bold text-black/40 w-full text-justify leading-relaxed">
-            <span className="text-pink-400">I'm Bindiya.</span>
+            <span className="text-pink-400">Im Bindiya.</span>
             <span className="relative w-2 bindiya-photo text-black/0">
               Birk
               <img
@@ -53,14 +51,14 @@ export default function Home() {
             unknowingly consume it. I thought about how these cows give us milk,
             a source of nourishment for so many. But if they consume plastic,
             their milk can carry harmful bacteria, leading to serious diseases.
-            I couldn't just stand by and do nothing. That's when I decided to
+            I couldnt just stand by and do nothing. Thats when I decided to
             take a step toward change. I started Dhrosubi, a brand that creates
             eco-friendly non-woven bags—strong, reusable, and safe for nature.
             My mission is simple: reduce plastic waste and protect the animals
             that share this planet with us. Every bag we create is a step toward
             a cleaner world, a safer future, and a promise to the animals who
-            can't speak for themselves. Join us in this movement—because change
-            begins with small choices. Dhrosubi – A Bag of Change.
+            cant speak for themselves. Join us in this movement—because change
+            begins with small choices. Dhrosubi A Bag of Change.
           </p>
         </div>
       </div>

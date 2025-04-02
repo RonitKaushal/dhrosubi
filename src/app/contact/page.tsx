@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Users } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 import { Facebook } from "lucide-react";
 import { Instagram } from "lucide-react";
