@@ -230,7 +230,7 @@ export default function ProductCard() {
               "flex justify-start items-center flex-col overflow-y-scroll bg-cream",
               side === "right"
                 ? "border-l-4 border-black"
-                : "border-t-4 border-black max-h-[750px]"
+                : "border-t-4 border-black h-[90vh]"
             )}
           >
             <SheetHeader className="flex justify-start items-center flex-col w-full h-auto pb-20">
