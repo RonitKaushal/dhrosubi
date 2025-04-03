@@ -238,3 +238,74 @@ button
 .marqueeOposite {
   animation: marqueeOposite 120s linear infinite;
 }
+
+.pin-grid button
+{
+  width: 100%;
+}
+
+@media only screen and (min-width: 900px)
+{
+.pin-grid
+{
+    columns: 4;
+    column-gap: 40px;
+    width: 100%;
+}
+.pin-item
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    break-inside: avoid;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 900px)
+{
+  .pin-grid
+  {
+      columns: 3;
+      column-gap: 0px;
+      width: 100%;
+  }
+  .pin-item
+  {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 95%;
+      height: auto;
+      break-inside: avoid;
+      overflow: hidden;
+      border-radius: 15px;
+      cursor: pointer;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 500px)
+{
+  .pin-grid
+  {
+      columns: 2;
+      column-gap: 10px;
+      width: 100%;
+  }
+  .pin-item
+  {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      break-inside: avoid;
+      overflow: hidden;
+      cursor: pointer;
+  }
+}

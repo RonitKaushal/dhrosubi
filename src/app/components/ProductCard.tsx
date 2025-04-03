@@ -172,26 +172,6 @@ const products = [
       priceRange: "$1.50 - $6.00 per piece",
     },
   },
-  {
-    id: 9,
-    title: "Non-Woven Wine Bottle Bag",
-    mainImage: "/product.jpg",
-    additionalImages: [
-      "/images/non-woven-bag-9a.jpg",
-      "/images/non-woven-bag-9b.jpg",
-    ],
-    description:
-      "Specially designed wine bottle bag with partitions for secure transport.",
-    colors: ["#8B4513", "#2F4F4F", "#DAA520"], // Saddle Brown, Dark Slate Gray, Goldenrod
-    size: ["10x8 inches", "12x10 inches"],
-    gsm: ["80 GSM", "100 GSM", "120 GSM"],
-    additionalInfo: {
-      minOrderQuantity: { india: "500 KG", otherCountries: "1 Tonne" },
-      material: "Non-Woven Fabric",
-      useFor: ["Bottle Carrying", "Gift Bags"],
-      priceRange: "$1.00 - $4.50 per piece",
-    },
-  },
 ];
 
 // ----------------------------------------------------------------------------------
@@ -211,11 +191,11 @@ export default function ProductCard() {
   }, []);
 
   return (
-    <div className="flex justify-between items-start flex-wrap w-full h-auto max-w-[1200px]">
+    <div className="pin-grid w-full h-auto max-w-[1200px]">
       {products.map((product) => (
         <Sheet key={product.id}>
           <SheetTrigger>
-            <div className="flex justify-start items-start mt-5 border-2 border-l-4 border-b-4 border-black flex-col w-[180px] lg:w-[280px] md:w-[210px] p-2 md:p-3 rounded-xl">
+            <div className="pin-item mt-5 border-2 border-l-4 border-b-4 border-black p-2 md:p-3 rounded-xl">
               <div className="relative w-full h-48">
                 <Image
                   src={product.mainImage}
@@ -225,11 +205,11 @@ export default function ProductCard() {
                   className="rounded-lg border-2 border-black"
                 />
               </div>
-              <h3 className="text-left md:text-lg lg:text-xl inter text-black leading-relaxed md:min-h-16 font-semibold mt-3">
+              <h3 className="text-left text-sm lg:text-lg inter text-black leading-relaxed md:min-h-16 font-semibold mt-3">
                 {product.title}
               </h3>
               <div className="flex justify-between items-center w-full mt-2">
-                <p className="inter font-bold flex justify-center items-center bg-black text-white px-3 py-1 text-base md:text-lg lg:text-xl rounded-sm min-w-[110px]">
+                <p className="inter font-bold flex justify-center items-center bg-black text-white px-3 py-1 text-sm md:text-base lg:text-base rounded-sm md:min-w-[110px]">
                   View More
                 </p>
                 <div className="relative flex justify-end items-center w-auto">

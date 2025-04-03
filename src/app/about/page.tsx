@@ -21,20 +21,20 @@ export default function Home() {
           <h4 className="anton text-left text-4xl md:text-5xl lg:text-6xl uppercase w-full">
             Our story
           </h4>
-          <p className=" mt-5 inter text-xl md:text-2xl lg:text-3xl font-bold text-black/40 w-full text-justify leading-relaxed">
-            <span className="text-pink-400">Im Bindiya.</span>
+          <p className="mt-5 inter font-bold text-xl md:text-2xl lg:text-3xl text-black/40 w-full text-justify leading-relaxed">
+            <span className="font-bold">Im Bindiya.</span>
             <span className="relative w-2 bindiya-photo text-black/0">
-              Birk
+              Birkjjjj
               <img
                 src="/Bindiya Photo.png"
                 className="absolute top-0 left-2 border border-black rounded-full w-auto h-[40px]"
                 alt=""
               />
-            </span>{" "}
+            </span>
             Two years ago, while{" "}
-            <span className="text-black">shopping for clothes</span>, I saw
-            something that changed my life—{" "}
-            <span className="text-red-500">
+            <span className="text-black font-bold">shopping for clothes</span>,
+            I saw something that changed my life—{" "}
+            <span className="text-black font-bold">
               a{" "}
               <span className="relative w-2 bindiya-photo text-black/0">
                 Bindk
@@ -50,15 +50,25 @@ export default function Home() {
             is, not just for the environment but for these innocent animals that
             unknowingly consume it. I thought about how these cows give us milk,
             a source of nourishment for so many. But if they consume plastic,
-            their milk can carry harmful bacteria, leading to serious diseases.
-            I couldnt just stand by and do nothing. Thats when I decided to
-            take a step toward change. I started Dhrosubi, a brand that creates
-            eco-friendly non-woven bags—strong, reusable, and safe for nature.
+            their milk can carry{" "}
+            <span className="text-black font-bold"> harmful bacteria,</span>{" "}
+            leading to serious diseases. I couldnt just stand by and do nothing.
+            Thats when I decided to
+            <span className="text-black font-bold ml-2">
+              take a step toward change.
+            </span>{" "}
+            I started Dhrosubi,{" "}
+            <span className="text-black font-bold mx-2">
+              A brand that creates eco-friendly non-woven bags—strong, reusable,
+              and safe for nature.
+            </span>
             My mission is simple: reduce plastic waste and protect the animals
             that share this planet with us. Every bag we create is a step toward
             a cleaner world, a safer future, and a promise to the animals who
-            cant speak for themselves. Join us in this movement—because change
-            begins with small choices. Dhrosubi A Bag of Change.
+            cant speak for themselves.{" "}
+            <span className="text-black font-bold mx-2">
+              Join us in this movement—because change begins with small choices.
+            </span>
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Cta() {
               Ready to get started?
             </h2>
             <p className="inter text-xl md:text-2xl lg:text-2xl">
-              Sign up for a free account today.
+              Call today to get best prices.
             </p>
           </div>
           <div className="flex justify-center md:items-end items-center w-full md:w-auto h-auto">
