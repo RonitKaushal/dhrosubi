@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative flex justify-center items-center flex-col w-full md:w-[90%] h-auto text-black mb-24">
-      <div className="heading flex justify-center items-center flex-col uppercase w-full h-[100vh]">
-        <h1 className="anton max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl">
+    <div className="relative flex justify-center items-center flex-col w-[95%] md:w-[90%] h-auto text-black mb-24">
+      <div className="heading flex justify-center items-center flex-col w-full h-[100vh]">
+        <h1 className="anton max-w-[1200px] text-center uppercase text-3xl md:text-6xl lg:text-7xl">
           Eco-Friendly, Reusable & Sustainable
         </h1>
-        <h1 className="anton max-w-[1200px] text-center text-4xl md:text-6xl lg:text-7xl my-5 md:my-10">
+        <h1 className="anton max-w-[1200px] w-full uppercase text-center text-3xl md:text-6xl lg:text-7xl my-5 md:my-10">
           Non woven{" "}
           <span className="bg-light-green border-2 border-l-6 border-b-6 border-black rounded-full py-0 px-5 md:px-10 lg:px-32">
             carry bags
@@ -20,10 +20,10 @@ export default function Hero() {
           alternative. Join us in making a greener choice for a better tomorrow!
         </p>
         <div className="flex justify-center items-center uppercase w-full h-auto">
-          <button onClick={() => window.location.href = "/products"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-white text-black">
+          <button onClick={() => window.location.href = "/products"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-sm md:text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-white text-black">
             Show Products
           </button>
-          <button onClick={() => window.location.href = "tel:+919173144109"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
+          <button onClick={() => window.location.href = "tel:+919173144109"} className="relative cursor-pointer uppercase inter font-bold px-4 py-2 md:px-7 md:py-2 my-10 mx-1 md:mx-3 text-sm md:text-lg w-auto rounded-lg border-2 border-b-4 border-l-4 border-black bg-light-green text-black">
             Call now!
           </button>
         </div>

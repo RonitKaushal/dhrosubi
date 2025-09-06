@@ -1,79 +1,100 @@
 import Footer from "../components/footer";
-import Accordion from "../components/accordion";
 import MarqueeDemo from "../components/marquees";
+import { Leaf, Recycle, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 
-export default function Home() {
+export default function About() {
   return (
-    <div className="relative flex flex-col justify-center items-center w-[100vw] mt-16 overflow-hidden h-auto">
-      <div className="relative flex justify-center items-center flex-col w-full max-w-[1200px] h-auto mt-10">
-        <h4 className="anton text-4xl md:text-5xl lg:text-6xl uppercase w-full text-center">
+    <div className="relative flex flex-col justify-center items-center w-full mt-14 overflow-hidden">
+      {/* Header Section */}
+      <section className=" flex flex-col justify-center items-center w-full h-[95vh] overflow-hidden">
+        <h1 className="anton text-4xl md:text-5xl lg:text-6xl w-full uppercase text-center z-10 text-black">
           About us
-        </h4>
-        <h3 className="inter text-base md:text-base lg:text-xl w-[80%] mt-5 text-center">
+        </h1>
+        <p className="inter text-base md:text-lg lg:text-xl w-[80%] md:w-full max-w-[700px] mt-5 text-center leading-relaxed z-10 text-black">
           Have a question? Need a custom order? We’d love to hear from you!
           Reach out to us using the details below or fill out the contact form,
           and we’ll get back to you as soon as possible.
-        </h3>
-      </div>
-      <Accordion />
-      <div className="relative flex justify-center items-center w-full max-w-[1200px] my-20 h-auto">
-        <div className="relative flex justify-center items-center flex-col w-[95%] lg:w-full h-auto">
-          <h4 className="anton text-left text-4xl md:text-5xl lg:text-6xl uppercase w-full">
-            Our story
-          </h4>
-          <p className="mt-5 inter font-bold text-xl md:text-2xl lg:text-3xl text-black/40 w-full text-justify leading-relaxed">
-            <span className="font-bold">Im Bindiya.</span>
-            <span className="relative w-2 bindiya-photo text-black/0">
-              Birkjjjj
-              <img
-                src="/Bindiya Photo.png"
-                className="absolute top-0 left-2 border border-black rounded-full w-auto h-[40px]"
-                alt=""
-              />
-            </span>
-            Two years ago, while{" "}
-            <span className="text-black font-bold">shopping for clothes</span>,
-            I saw something that changed my life—{" "}
-            <span className="text-black font-bold">
-              a{" "}
-              <span className="relative w-2 bindiya-photo text-black/0">
-                Bindk
-                <img
-                  src="/cow Photo text.png"
-                  className="absolute top-0 left-1 border border-black rounded-full w-auto h-[40px]"
-                  alt=""
-                />
-              </span>{" "}
-              struggling to eat a plastic bag
-            </span>
-            . My heart sank. That moment, I realized how harmful plastic waste
-            is, not just for the environment but for these innocent animals that
-            unknowingly consume it. I thought about how these cows give us milk,
-            a source of nourishment for so many. But if they consume plastic,
-            their milk can carry{" "}
-            <span className="text-black font-bold"> harmful bacteria,</span>{" "}
-            leading to serious diseases. I couldnt just stand by and do nothing.
-            Thats when I decided to
-            <span className="text-black font-bold ml-2">
-              take a step toward change.
-            </span>{" "}
-            I started Dhrosubi,{" "}
-            <span className="text-black font-bold mx-2">
-              A brand that creates eco-friendly non-woven bags—strong, reusable,
-              and safe for nature.
-            </span>
-            My mission is simple: reduce plastic waste and protect the animals
-            that share this planet with us. Every bag we create is a step toward
-            a cleaner world, a safer future, and a promise to the animals who
-            cant speak for themselves.{" "}
-            <span className="text-black font-bold mx-2">
-              Join us in this movement—because change begins with small choices.
-            </span>
+        </p>
+        <div className="absolute top-0 flex justify-center items-center w-full h-[95vh]">
+          <Image
+            src="/about.jpeg"
+            alt="Eco-friendly non woven bags"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="flex justify-between items-start w-full flex-wrap max-w-[1200px] my-20 px-4 text-left">
+        <div className="flex justify-center items-start flex-col w-full md:w-[45%] h-auto">
+          <h2 className="anton text-3xl md:text-4xl lg:text-5xl uppercase">
+            Our Mission
+          </h2>
+          <p className="inter mt-5 text-base md:text-lg lg:text-xl text-black/80 leading-relaxed whitespace-pre-line">
+            At Dhrosubi, our mission is to create a sustainable future by
+            replacing harmful single-use plastics with strong, reusable, and
+            eco-friendly non-woven bags. We believe that small choices make a
+            big difference. Every bag we produce is one less plastic bag harming
+            the environment. Our goal is to make eco-friendly solutions
+            affordable, practical, and stylish so that more people can adopt
+            them in daily life. We are committed to protecting nature,
+            supporting communities, and creating products that are safe for both
+            people and animals. With every bag, we take a step toward a cleaner
+            planet and a healthier future for the next generation.
           </p>
         </div>
-      </div>
+        <div className="hidden md:flex justify-center items-center relative w-full md:w-[50%] h-[500px] border-2 border-b-4 border-l-4 border-black rounded-xl overflow-hidden">
+          <Image
+            src="/mission.jpg"
+            alt="Eco-friendly non woven bags"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </section>
 
+      {/* Why Choose Us Section */}
+      <section className="w-full max-w-[1200px] mt-20 px-4">
+        <h2 className="anton text-3xl md:text-4xl lg:text-5xl uppercase text-center">
+          Why Choose Us
+        </h2>
+        <div className="flex justify-center items-center flex-col md:flex-row gap-4 mt-10">
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-light-green border-2 border-b-4 border-l-4 border-black">
+            <Leaf className="w-12 h-12 text-green-600 mb-4" />
+            <h3 className="anton text-xl md:text-2xl">Eco-Friendly</h3>
+            <p className="inter mt-2 text-sm md:text-base text-black/70">
+              Made with sustainable materials that help reduce plastic waste.
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-yellow border-2 border-b-4 border-l-4 border-black">
+            <Recycle className="w-12 h-12 text-yellow-600 mb-4" />
+            <h3 className="anton text-xl md:text-2xl">Reusable</h3>
+            <p className="inter mt-2 text-sm md:text-base text-black/70">
+              Strong and long-lasting, perfect for daily shopping and reuse.
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center p-6 rounded-xl bg-lavender border-2 border-b-4 border-l-4 border-black">
+            <ShieldCheck className="w-12 h-12 text-purple-600-600 mb-4" />
+            <h3 className="anton text-xl md:text-2xl">Durable</h3>
+            <p className="inter mt-2 text-sm md:text-base text-black/70">
+              High-quality stitching ensures our bags stay reliable for years.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+
+      {/* Call to Action */}
+
+      {/* Marquee */}
       <MarqueeDemo />
+
+      {/* Footer */}
       <Footer />
     </div>
   );
