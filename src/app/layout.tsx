@@ -15,16 +15,62 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dhrosubi | Non Woven Carry Bags Manufacturer",
+  title: "Dhrosubi | Non Woven Carry Bags Manufacturer in India",
   description:
-    "Eco-Friendly, Durable, and Reusable—our Non-Woven Carry bags are designed to reduce plastic waste while providing a strong and stylish alternative. Join us in making a greener choice for a better tomorrow!",
+    "Dhrosubi manufactures eco-friendly, durable, and reusable non-woven carry bags. Say goodbye to single-use plastics with our premium quality bags. Order wholesale and custom designs for retail, grocery, and events.",
+  keywords: [
+    "non woven bags",
+    "eco friendly carry bags",
+    "non woven bag manufacturer",
+    "reusable shopping bags",
+    "wholesale carry bags",
+    "custom non woven bags",
+    "Dhrosubi bags",
+    "India bag manufacturer",
+  ],
+  authors: [{ name: "Dhrosubi Team" }],
+  creator: "Dhrosubi",
+  publisher: "Dhrosubi",
+openGraph: {
+    title: "Dhrosubi | Non Woven Carry Bags Manufacturer",
+    description: "Eco-Friendly, Durable, and Reusable—our Non-Woven Carry bags are designed to reduce plastic waste...",
+    url: "https://dhrosubi.com",
+    siteName: "Dhrosubi",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dhrosubi Non-Woven Carry Bags",
+      },
+    ],
+    type: "website",
+  },
   twitter: {
     card: "summary_large_image",
-    title: "Dhrosubi | Premium Products",
-    description: "Best products at the best prices!",
+    site: "@Dhrosubi", // replace with your handle if you have
+    creator: "@Dhrosubi",
+    title: "Dhrosubi | Premium Non Woven Bags",
+    description:
+      "Eco-friendly, reusable, and durable non woven carry bags direct from manufacturer.",
     images: ["/og-image.png"],
   },
+  alternates: {
+    canonical: "https://www.dhrosubi.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
+
 
 export default function RootLayout({
   children,
